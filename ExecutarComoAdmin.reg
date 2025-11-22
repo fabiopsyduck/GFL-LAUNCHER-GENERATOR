@@ -1,0 +1,13 @@
+Windows Registry Editor Version 5.00
+
+; Cria a entrada no menu para arquivos .ps1
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.ps1\Shell\RunNativeAdmin]
+@="Executar Script como Administrador"
+"Icon"="powershell.exe"
+
+; Define o comando
+; 1. Chama o PowerShell
+; 2. Usa Start-Process com o verbo 'RunAs' (que pede a senha de admin/confirmação)
+; 3. Define a politica como Bypass apenas para essa execução (seguro e evita erros)
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.ps1\Shell\RunNativeAdmin\Command]
+@="\"C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe\" \"-Command\" \"& {Start-Process powershell.exe -ArgumentList '-ExecutionPolicy Bypass -File \\\"%1\\\"' -Verb RunAs}\""

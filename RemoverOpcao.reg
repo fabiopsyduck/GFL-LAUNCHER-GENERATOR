@@ -1,0 +1,4 @@
+Windows Registry Editor Version 5.00
+
+; O sinal de menos (-) antes do HKEY instrui o Windows a apagar esta chave inteira
+[-HKEY_CLASSES_ROOT\SystemFileAssociations\.ps1\Shell\RunNativeAdmin]
