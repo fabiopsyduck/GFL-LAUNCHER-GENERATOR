@@ -1,4 +1,6 @@
 Ideal tool to start the game without bugs and without the need to manually change settings.
+Only the launcher needs to run in administrator mode, not the generator.
+
 
 If you want to run it in administrator mode more easily with just two mouse clicks, use the "ExecutarComoAdmin.reg" file.
 
