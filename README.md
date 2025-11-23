@@ -1,4 +1,5 @@
 Ideal tool to start the game without bugs and without the need to manually change settings.
+
 Only the launcher needs to run in administrator mode, not the generator.
 
 
